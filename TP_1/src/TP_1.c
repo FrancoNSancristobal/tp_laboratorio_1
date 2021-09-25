@@ -27,6 +27,7 @@ int main(void) {
 		getFloat(&numeroUno, "Ingrese el primer operador\n", "Ocurrio un problema no se pudo ingresar el valor");
 		flagPrimerIngreso=1;
 		limpiarConsola();
+		flagCalculosRealizados=0;
 		break;
 	case 2:
 		limpiarConsola();
@@ -34,6 +35,7 @@ int main(void) {
 		getFloat(&numeroDos, "Ingrese el segundo operador\n", "Ocurrio un problema no se pudo ingresar el valor");
 		flagPrimerIngresoSegundo=1;
 		limpiarConsola();
+		flagCalculosRealizados=0;
 		break;
 	case 3:
 		if(!opcionTres(flagPrimerIngreso,flagPrimerIngresoSegundo)){
